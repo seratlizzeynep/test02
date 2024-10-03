@@ -9,10 +9,10 @@ public class travel {
         
        
         int istanbulPrice = 1300;
-         int antalyaPrice = 1600;
+        int antalyaPrice = 1600;
         int bodrumPrice = 2000;
-      int berlinPrice = 20000;
-     int parisPrice = 15000;
+        int berlinPrice = 20000;
+        int parisPrice = 15000;
       
         while (true) {
             System.out.print("Enter your current balance: ");
