@@ -1,40 +1,18 @@
-package lab01;
-
-import java.util.Scanner;
+package lab041;
 
 public class Main {
     public static void main(String[] args) {
-        
-        Scanner scanner = new Scanner(System.in);
+        // Create first HumanBeing object
+        HumanBeing kamil = new HumanBeing("kamil", 1990);
+        kamil.step(5000); // Add steps
+        System.out.println(kamil); // Display information
 
-        
-        System.out.print("Kitabın adını girin: ");
-        String name = scanner.nextLine();
+        // Create second HumanBeing object
+        HumanBeing hayri = new HumanBeing("hayri", 1980);
+        System.out.println(hayri); // Display information without steps
 
-        System.out.print("Çıkış yılını girin: ");
-        int releaseDate = scanner.nextInt();
-
-        System.out.print("Fiyatı girin: ");
-        double price = scanner.nextDouble();
-
-        
-        Book myBook = new Book(releaseDate, name, price);
-
-        
-        System.out.println("Kitap oluşturuldu: " + myBook.toString());
-
-       
-        System.out.println("50 çıkarıldıktan sonra yeni fiyat: " + myBook.deductPrice());
-
-        
-        System.out.print("Yeni kitap adını girin: ");
-        scanner.nextLine();  
-        String newName = scanner.nextLine();
-        myBook.changeName(newName);
-
-        
-        System.out.println("Güncellenmiş kitap: " + myBook.toString());
-
-       
+        // Display world population
+        System.out.println("World Population : " + HumanBeing.getWorldPopulation());
     }
 }
+ 
